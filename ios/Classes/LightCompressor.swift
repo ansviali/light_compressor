@@ -117,7 +117,7 @@ public struct LightCompressor {
         videoWriterInput.expectsMediaDataInRealTime = true
         videoWriterInput.transform = videoTrack.preferredTransform
 
-        let videoWriter = try! AVAssetWriter(outputURL: destination, fileType: AVFileType.mov)
+        let videoWriter = try! AVAssetWriter(outputURL: destination, fileType: AVFileType.mp4)
         videoWriter.add(videoWriterInput)
 
         // Setup video reader output
